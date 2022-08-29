@@ -5,13 +5,13 @@ jobs:
   run-github-actions:
     runs-on: ubuntu-latest
     steps:
-      - name List Files
+      - name: List Files
         run:
           pwd
           ls -a
       - name: Checkout
         uses: actions/chekout@v1
-      - name: List Files
+      - name: List Files Aafter checkout
         run:
            pwd
            ls -a
