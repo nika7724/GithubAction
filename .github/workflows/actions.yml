@@ -6,13 +6,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: List Files
-        run:
+        run: |
           pwd
           ls -a
       - name: Checkout
         uses: actions/chekout@v1
       - name: List Files Aafter checkout
-        run:
+        run: |
            pwd
            ls -a
       - name: Simple JS Action
